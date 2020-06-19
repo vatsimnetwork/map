@@ -1,27 +1,29 @@
 <template>
   <div class="fallback center">
-    <div class="fallback__side fallback__left flex-col">
-      <div class="fallback__message">Page not found, sorry</div>
-      <div class="fallback__submessage">
-        You may have misspelled the url,
-        or the page may no longer exist. Here are some suggested pages
+    <div class="side_cont center">
+      <div class="fallback__side fallback__left flex-col">
+        <div class="fallback__message">Page not found, sorry</div>
+        <div class="fallback__submessage">
+          You may have misspelled the url,
+          or the page may no longer exist. Here are some suggested pages
+        </div>
+        <ul class="fallback__links">
+          <li class="fallback__link">
+            <router-link to="/">HOME</router-link>
+          </li>
+          <li class="fallback__link">
+            <a href="https://network-status.vatsim.net/">STATUS PAGE</a>
+          </li>
+          <li class="fallback__link">
+            <router-link to="/developer/login">DEVELOPER PORTAL</router-link>
+          </li>
+        </ul>
       </div>
-      <ul class="fallback__links">
-        <li class="fallback__link">
-          <router-link class="fallback__href" to="/">HOME</router-link>
-        </li>
-        <li class="fallback__link">
-          <a class="fallback__href" href="https://network-status.vatsim.net/">STATUS PAGE</a>
-        </li>
-        <li class="fallback__link">
-          <router-link class="fallback__href" to="/developer/login">DEVELOPER PORTAL</router-link>
-        </li>
-      </ul>
-    </div>
-    <div class="fallback__side center">
-      <div class="fallback__cont">
-        <div class="fallback__title fallback__title-upper">404</div>
-        <div class="fallback__title">404</div>
+      <div class="fallback__side center">
+        <div class="fallback__cont">
+          <div class="fallback__title fallback__title-upper">404</div>
+          <div class="fallback__title">404</div>
+        </div>
       </div>
     </div>
   </div>
@@ -41,10 +43,12 @@ export default Vue.extend({
   height: 100%;
 
   @media (max-width: 950px) {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column-reverse;
+    align-items: start;
   }
+}
+
+.side__cont {
+  max-width: 1920px;
 }
 
 .fallback__side {
@@ -63,7 +67,7 @@ export default Vue.extend({
   padding: 0 4rem;
 
   @media (max-width: 950px) {
-    padding: 0 2rem;
+    padding: 2rem;
   }
 }
 

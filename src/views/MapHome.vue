@@ -23,7 +23,7 @@ export default Vue.extend({
     return {
       center: [0, 52] as [number, number],
       token: process.env.VUE_APP_MAP_TOKEN,
-      style: 'https://api.maptiler.com/maps/6a671939-5a22-4312-a88c-ebb9e7ea774a/?key=5jkt9Sl1zXB2wVGxPR5i#2.1/36.96/18.09',
+      style: process.env.VUE_APP_MAP_STYLE,
     };
   },
 });

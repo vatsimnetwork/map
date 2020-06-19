@@ -1,29 +1,24 @@
-# vatmap
+# map
 
-## Project setup
-```
-npm install
-```
+## Contributors 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Requires Node.js and NPM installed (npm is included in node)
 
-### Compiles and minifies for production
+#### Clone and install dependancies
 ```
-npm run build
+git clone https://github.com/vatsimnetwork/map.git && cd map && npm install
 ```
 
-### Run your unit tests
+#### Start development server
+```
+npm start
+```
+
+Run unit tests
 ```
 npm run test:unit
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
