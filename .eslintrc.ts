@@ -10,6 +10,7 @@ module.exports = {
 		project: "./tsconfig.json",
 	},
 	rules: {
+		"react-hooks/exhaustive-deps": 0,
 		"jsx-indent": [2, "tab"],
 		"@typescript-eslint/quotes": 0,
 		"@typescript-eslint/explicit-module-boundary-types": 0,
